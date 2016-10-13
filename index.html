@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Kool Aid</title>
-  </head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="./images/sodacans_favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Kool Aid</title>
+
   <body>
-
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
+    <div class="header">
+      <img src="./images/logo.svg" alt="logo" />
+      <nav>
+        <a href="./about.html">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+    </div>
     <div class="container">
-      <h1>Random Number Generator</h1>
-      <div id="dice">
-        1
+      <div class ="leftSide">
+        <img src="./images/sodacans.png" alt="Soda Cans">
+      </div>
+      <div class="rightSide">
+        <h1 id='headline'>
+          We've distilled God's essence into one simple 12oz can.
+        </h1>
+        <p id="subtext">
+          This drink is so amazing we're giving them away for free! The afterlife is only a click away!
+        </p>
+        <a href="./contact.html">
+          <button  id="getKoolAid">SEND ME MY KOOL-AID</button>
+        </a>
       </div>
     </div>
 
+    <div class="footer">
+      <div id="TopRow">
+        <nav id="footNav">
+          <a href="./index.html">HOME</a>
+          <a href="./about.html">ABOUT US</a>
+          <a href="./contact.html">CONTACT</a>
+          <a href="https://twitter.com"><img class="social" src="./images/twitter.svg"  alt="Twitter Logo"/></a>
+          <a href="https://facebook.com"><img class="social" src="./images/facebook.svg"  alt="Facebook Logo"/></a>
+          <a href="https://instagram.com"><img class="social" src="./images/instagram.svg"  alt="Instagram Logo"/></a>
+        </nav>
+      </div>
+      <div id="BottomRow">
+        <a>&copy; ShaedyCult 2016</a>
+      </div>
+    </div>
+
+    <script scr="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="./js/home.js"></script>
   </body>
+
+
 </html>
